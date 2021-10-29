@@ -6,6 +6,7 @@
 
 body{
     min-width: 100vh;
+    font-family: "Poppins" , sans-serif;
     min-height: 100vh ;
     background-color: #0093E9;
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
@@ -37,4 +38,41 @@ form button {
 form button:hover{
     color: white;
     background-color: #0093E9; 
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.container ul{
+    list-style: none;
+    font-size: 1.3rem;
+    min-width: 40%;
+}
+.container ul .div-item{
+    display: flex;
+    justify-content:space-between;
+    background-color: white;
+    margin: 2px 0;
+    
+}
+.container ul .div-item li {
+    flex: 1;
+   padding: 1rem .5rem;
+    
+}
+.container ul .div-item .checkbtn ,.container ul .div-item .trashBtn{
+    border:none ; 
+    cursor: pointer;
+    background-color: white;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+} 
+.container ul .div-item .checkbtn {
+    background-color: #32CD32;
+    margin-right: 2px;
+}
+.container ul .div-item .trashBtn{
+    background: #ff6f47;
 }
