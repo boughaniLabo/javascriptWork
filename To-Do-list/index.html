@@ -18,11 +18,17 @@
     <form >
         <input type="text" id="to-do-input" >
         <button id="btnTodo"><i class="fas fa-plus-square"></i></button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">all</option>
+                <option value="completed">Completed</option>
+                <option vlaue="uncompleted">Uncompeted</option>
+
+            </select>
+        </div>
     </form>
     <div class="container">
-        <ul id="listTodo" class="list-toDo">
-
-        </ul>
+        <ul id="listTodo" class="list-toDo"></ul>
     </div>
     
     <script src="javascript.js"></script>
